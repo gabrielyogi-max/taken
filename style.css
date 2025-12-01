@@ -1,0 +1,37 @@
+/* Minimalist Custom CSS */
+
+/* 1. Custom Scrollbar - Minimal */
+::-webkit-scrollbar {
+    width: 10px;
+    background: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e5e5e5;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d4d4d4;
+}
+
+/* 2. Global Smoothness */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Typography Adjustments */
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.02em; /* Tighter tracking for headings */
+}
+
+/* 4. Subtle Animations */
+.group:hover .group-hover\:scale-105 {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
